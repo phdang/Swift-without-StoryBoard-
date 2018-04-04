@@ -244,7 +244,4 @@ class SignInView: UIViewController {
     //        return true
     //    }
     
-   
-    
-  
 }
