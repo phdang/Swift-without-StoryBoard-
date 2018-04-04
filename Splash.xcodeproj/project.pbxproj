@@ -15,6 +15,7 @@
 		3D05B60020737CA700BB888C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B5FF20737CA700BB888C /* SplashView.swift */; };
 		3D05B60320737E3400BB888C /* extension splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B60220737E3400BB888C /* extension splash.swift */; };
 		3D05B605207380BF00BB888C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B604207380BE00BB888C /* SignInViewController.swift */; };
+		3D08DFFA20754CDD00E6202F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DFF920754CDD00E6202F /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3D05B5FF20737CA700BB888C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		3D05B60220737E3400BB888C /* extension splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension splash.swift"; sourceTree = "<group>"; };
 		3D05B604207380BE00BB888C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3D08DFF920754CDD00E6202F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3D05B5FF20737CA700BB888C /* SplashView.swift */,
+				3D08DFF920754CDD00E6202F /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D08DFFA20754CDD00E6202F /* SignInView.swift in Sources */,
 				3D05B60020737CA700BB888C /* SplashView.swift in Sources */,
 				3D05B60320737E3400BB888C /* extension splash.swift in Sources */,
 				3D05B5ED20737B9600BB888C /* SplashController.swift in Sources */,

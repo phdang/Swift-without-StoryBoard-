@@ -9,16 +9,21 @@
 import UIKit
 
 class SplashController: SplashView {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(handleSignout))
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func handleSignout() {
+        //action handleSignout here
+        let signInVc = SignInViewController()
+        signInVc.view.backgroundColor = UIColor(hexString: "#FF80AB")
+        navigationController?.pushViewController(signInVc, animated: true)
     }
-
+    
 
 }
 

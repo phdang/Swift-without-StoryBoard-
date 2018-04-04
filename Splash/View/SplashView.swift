@@ -14,20 +14,6 @@ class SplashView: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(red: 70, green: 130, blue: 180)
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(handleSignout))
-
     }
     
-    @objc func handleSignout() {
-        //action handleSignout here
-        //print("Signout handler")
-        present(SignInViewController(), animated: true, completion: nil)
-        
-    }
-
-  
-
-   
-
 }
