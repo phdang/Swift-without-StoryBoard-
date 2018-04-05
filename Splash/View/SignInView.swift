@@ -16,16 +16,18 @@ class SignInView: UIViewController {
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        
         return imageView
     }()
     
     internal func layoutProfile() {
         view.addSubview(profileImage)
         NSLayoutConstraint.activate([
-            profileImage.widthAnchor.constraint(equalToConstant: 120),
-            profileImage.heightAnchor.constraint(equalToConstant: 120),
+            profileImage.widthAnchor.constraint(equalToConstant: 80),
+            profileImage.heightAnchor.constraint(equalToConstant: 80),
             profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            profileImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)
+            profileImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
             ])
     }
     
@@ -57,6 +59,7 @@ class SignInView: UIViewController {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your full name"
+        textField.autocorrectionType = .no
         return textField
     }()
     
@@ -91,6 +94,8 @@ class SignInView: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your email"
         textField.keyboardType = .emailAddress
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -124,6 +129,8 @@ class SignInView: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your password"
         textField.isSecureTextEntry = true
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -151,18 +158,10 @@ class SignInView: UIViewController {
     
     internal let signInBtn : UIButton = {
        
-        let btn = UIButton()
+        let btn = styleBtn(title: "Sign in")
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Sign in", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        btn.backgroundColor = UIColor(hexString: "#2196F3")
-        btn.layer.cornerRadius = 10
-        btn.layer.shadowColor = UIColor(red: 97.0, green: 97.0, blue: 97.0, alpha: 0.8).cgColor
-        btn.layer.shadowOpacity = 0.8;
-        btn.layer.shadowRadius = 5.0;
-        btn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        btn.layer.masksToBounds = false
         return btn
+        
     }()
     
     internal func layoutSignInBtn() {
@@ -176,22 +175,11 @@ class SignInView: UIViewController {
             signInBtn.topAnchor.constraint(equalTo: passTextField.bottomAnchor, constant: 10)
             
             ])
-        
     }
     
     internal let registerBtn : UIButton = {
-        
-        let btn = UIButton()
+        let btn = styleBtn(title: "Register")
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Register", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        btn.backgroundColor = UIColor(hexString: "#2196F3")
-        btn.layer.cornerRadius = 10
-        btn.layer.shadowColor = UIColor(red: 97.0, green: 97.0, blue: 97.0, alpha: 0.8).cgColor
-        btn.layer.shadowOpacity = 0.8;
-        btn.layer.shadowRadius = 5.0;
-        btn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        btn.layer.masksToBounds = false
         return btn
     }()
     
@@ -215,9 +203,6 @@ class SignInView: UIViewController {
     internal func SignInBtnTouched() {
         
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

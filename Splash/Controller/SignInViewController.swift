@@ -7,12 +7,34 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignInViewController: SignInView {
-
+    
+    private func isValidEmail(email:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
+    
+    
+    private func isNameValid(name:String) -> Bool {
+        
+        let nameReEx = "[A-Z0-9a-z ]{6,120}"
+        
+        let predicate = NSPredicate(format: "SELF MATCHES %@", nameReEx)
+        
+        return predicate.evaluate(with: name)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setHidesBackButton(true, animated: true)
         
     }
 
@@ -22,7 +44,55 @@ class SignInViewController: SignInView {
     }
     
     @objc func handleRegisterBtnTouched() {
-        print("Register Button touched !")
+        
+        if !isNameValid(name: nameTextField.text ?? "") {
+            
+            alert(title: "Register Failed", message: "Your full name must be between 6 and 120 characters without any special characters", viewController: self)
+            
+            return
+            
+        }
+        
+        if !isValidEmail(email: emailTextField.text!) {
+            
+            alert(title: "Email Invalid", message: "Please correct your email !", viewController: self)
+
+        } else {
+            
+            Auth.auth().createUser(withEmail: emailTextField.text ?? "", password: passTextField.text ?? "", completion: { (user, error) in
+                
+                if let error = error {
+                    
+                    alert(title: "Register Failed", message: error.localizedDescription, viewController: self)
+                    
+                    return
+                }
+                
+                guard let userId = user?.uid else {
+                    
+                    alert(title: "Register Failed", message: "Something went wrong !", viewController: self)
+                    
+                    return
+                }
+                
+                let ref = Database.database().reference()
+                
+                let userRef = ref.child("users").child(userId)
+                
+                userRef.updateChildValues([
+                    
+                    "Name" : self.nameTextField.text!,
+                    
+                    "Email" : self.emailTextField.text!
+                    
+                    
+                    ])
+                
+                alert(title: "Register Successfully", message: "Now you can sign in with your email", viewController: self)
+                
+            })
+        }
+        
     }
    
     override func SignInBtnTouched() {
@@ -32,7 +102,29 @@ class SignInViewController: SignInView {
     }
     
     @objc func handleSignInBtnTouched() {
-        print("Sign in Button touched !")
+        
+        if !isValidEmail(email: emailTextField.text ?? "") {
+            
+            alert(title: "Sign in Failed", message: "Email is not valid", viewController: self)
+            
+            return
+            
+        }
+        
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passTextField.text ?? "") { (user, error) in
+            
+            if let error = error {
+                
+                alert(title: "Sign in Failed", message: error.localizedDescription, viewController: self)
+                
+            } else {
+               
+                self.navigationController?.popToRootViewController(animated: true)
+                
+            }
+            
+        }
+        
     }
     
 }

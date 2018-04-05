@@ -31,3 +31,45 @@ extension UIColor {
     }
 
 }
+
+func alert(title: String, message: String, viewController: UIViewController) {
+    
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    
+    let cancelAction = UIAlertAction(title: "Back", style: .cancel) { (action) in
+
+        alert.dismiss(animated: true, completion: nil)
+
+    }
+
+    alert.addAction(cancelAction)
+    
+    viewController.present(alert, animated: true, completion: nil)
+
+    
+}
+
+func styleBtn(title: String)->UIButton {
+    
+    let btn = UIButton()
+    btn.setTitle(title, for: .normal)
+    btn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+    btn.backgroundColor = UIColor(hexString: "#2196F3")
+    btn.layer.cornerRadius = 10
+    btn.layer.shadowColor = UIColor(red: 97.0, green: 97.0, blue: 97.0, alpha: 0.8).cgColor
+    btn.layer.shadowOpacity = 0.8;
+    btn.layer.shadowRadius = 5.0;
+    btn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+    btn.layer.masksToBounds = false
+    return btn
+}
+
+
+
+
+
+
+
+
+
+

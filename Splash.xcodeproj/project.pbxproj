@@ -16,6 +16,8 @@
 		3D05B60320737E3400BB888C /* extension splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B60220737E3400BB888C /* extension splash.swift */; };
 		3D05B605207380BF00BB888C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B604207380BE00BB888C /* SignInViewController.swift */; };
 		3D08DFFA20754CDD00E6202F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DFF920754CDD00E6202F /* SignInView.swift */; };
+		3D08DFFC2076687500E6202F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D08DFFB2076687400E6202F /* GoogleService-Info.plist */; };
+		6E3AC76E48EE14E1C850BB1A /* Pods_Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		3D05B60220737E3400BB888C /* extension splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension splash.swift"; sourceTree = "<group>"; };
 		3D05B604207380BE00BB888C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3D08DFF920754CDD00E6202F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3D08DFFB2076687400E6202F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC2D1279D181DA62A9BAB55 /* Pods-Splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.release.xcconfig"; sourceTree = "<group>"; };
+		D8AE4D4DD26DCA1464B2620C /* Pods-Splash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3AC76E48EE14E1C850BB1A /* Pods_Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				3D05B5E920737B9600BB888C /* Splash */,
 				3D05B5E820737B9600BB888C /* Products */,
+				B0362FC17206D03F60EA392C /* Pods */,
+				57DE6DBBD255D4B82AC265C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +80,7 @@
 				3D05B5F120737B9600BB888C /* Assets.xcassets */,
 				3D05B5F320737B9600BB888C /* LaunchScreen.storyboard */,
 				3D05B5F620737B9600BB888C /* Info.plist */,
+				3D08DFFB2076687400E6202F /* GoogleService-Info.plist */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -108,6 +118,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		57DE6DBBD255D4B82AC265C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0362FC17206D03F60EA392C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE4D4DD26DCA1464B2620C /* Pods-Splash.debug.xcconfig */,
+				CDC2D1279D181DA62A9BAB55 /* Pods-Splash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D05B5F920737B9600BB888C /* Build configuration list for PBXNativeTarget "Splash" */;
 			buildPhases = (
+				AAC14EB3C8DC4F02247E7170 /* [CP] Check Pods Manifest.lock */,
 				3D05B5E320737B9600BB888C /* Sources */,
 				3D05B5E420737B9600BB888C /* Frameworks */,
 				3D05B5E520737B9600BB888C /* Resources */,
+				8AC6A727A67E0ABC399DF137 /* [CP] Embed Pods Frameworks */,
+				11A43531FF22A9BC8B888904 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,12 +198,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D05B5F520737B9600BB888C /* LaunchScreen.storyboard in Resources */,
+				3D08DFFC2076687500E6202F /* GoogleService-Info.plist in Resources */,
 				3D05B5F220737B9600BB888C /* Assets.xcassets in Resources */,
 				3D05B5F020737B9600BB888C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A43531FF22A9BC8B888904 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Splash/Pods-Splash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC6A727A67E0ABC399DF137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Splash/Pods-Splash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Splash/Pods-Splash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC14EB3C8DC4F02247E7170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Splash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D05B5E320737B9600BB888C /* Sources */ = {
@@ -320,6 +411,7 @@
 		};
 		3D05B5FA20737B9600BB888C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8AE4D4DD26DCA1464B2620C /* Pods-Splash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +427,7 @@
 		};
 		3D05B5FB20737B9600BB888C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC2D1279D181DA62A9BAB55 /* Pods-Splash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
