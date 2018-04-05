@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class SplashController: SplashView {
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +21,12 @@ class SplashController: SplashView {
             handleSignout()
                         
         }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        SVProgressHUD.dismiss()
         
     }
     

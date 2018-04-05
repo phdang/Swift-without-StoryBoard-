@@ -17,6 +17,12 @@
 		3D05B605207380BF00BB888C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B604207380BE00BB888C /* SignInViewController.swift */; };
 		3D08DFFA20754CDD00E6202F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DFF920754CDD00E6202F /* SignInView.swift */; };
 		3D08DFFC2076687500E6202F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D08DFFB2076687400E6202F /* GoogleService-Info.plist */; };
+		3D08E04C2076D07F00E6202F /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08E0422076D07D00E6202F /* SVRadialGradientLayer.m */; };
+		3D08E04D2076D07F00E6202F /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08E0432076D07D00E6202F /* SVProgressAnimatedView.m */; };
+		3D08E04E2076D07F00E6202F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08E0472076D07E00E6202F /* SVProgressHUD.m */; };
+		3D08E04F2076D07F00E6202F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D08E0482076D07E00E6202F /* SVProgressHUD.bundle */; };
+		3D08E0502076D07F00E6202F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08E04A2076D07F00E6202F /* SVIndefiniteAnimatedView.m */; };
+		3D08E0522076D14100E6202F /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08E0512076D14100E6202F /* CustomUI.swift */; };
 		6E3AC76E48EE14E1C850BB1A /* Pods_Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,38 @@
 		3D05B604207380BE00BB888C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3D08DFF920754CDD00E6202F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3D08DFFB2076687400E6202F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D08E0172076C3B400E6202F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		3D08E0182076C3B400E6202F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3D08E0192076C3B400E6202F /* SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3D08E01A2076C3B400E6202F /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		3D08E01B2076C3B400E6202F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3D08E01C2076C3B400E6202F /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		3D08E01D2076C3B400E6202F /* SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3D08E01E2076C3B400E6202F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3D08E01F2076C3B400E6202F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3D08E0202076C3B400E6202F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3D08E0222076C4A000E6202F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		3D08E0232076C4A000E6202F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3D08E0242076C4A000E6202F /* SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3D08E0252076C4A000E6202F /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		3D08E0262076C4A000E6202F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3D08E0272076C4A000E6202F /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		3D08E0282076C4A000E6202F /* SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3D08E0292076C4A000E6202F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3D08E02A2076C4A000E6202F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3D08E02B2076C4A000E6202F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3D08E03B2076CC9E00E6202F /* Splash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Splash-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D08E0422076D07D00E6202F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		3D08E0432076D07D00E6202F /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		3D08E0442076D07D00E6202F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3D08E0452076D07E00E6202F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3D08E0462076D07E00E6202F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3D08E0472076D07E00E6202F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3D08E0482076D07E00E6202F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3D08E0492076D07E00E6202F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3D08E04A2076D07F00E6202F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3D08E04B2076D07F00E6202F /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		3D08E0512076D14100E6202F /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 		C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2D1279D181DA62A9BAB55 /* Pods-Splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.release.xcconfig"; sourceTree = "<group>"; };
 		D8AE4D4DD26DCA1464B2620C /* Pods-Splash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3D05B5E920737B9600BB888C /* Splash */,
+				3D08E02C2076C4C800E6202F /* SVProgressHUD */,
 				3D05B5E820737B9600BB888C /* Products */,
 				B0362FC17206D03F60EA392C /* Pods */,
 				57DE6DBBD255D4B82AC265C7 /* Frameworks */,
@@ -97,6 +136,7 @@
 			children = (
 				3D05B5FF20737CA700BB888C /* SplashView.swift */,
 				3D08DFF920754CDD00E6202F /* SignInView.swift */,
+				3D08E0512076D14100E6202F /* CustomUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,9 +158,65 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		3D08E0162076C3B400E6202F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3D08E0172076C3B400E6202F /* SVRadialGradientLayer.m */,
+				3D08E0182076C3B400E6202F /* SVIndefiniteAnimatedView.h */,
+				3D08E0192076C3B400E6202F /* SVProgressHUD.h */,
+				3D08E01A2076C3B400E6202F /* SVProgressAnimatedView.m */,
+				3D08E01B2076C3B400E6202F /* SVProgressHUD-Prefix.pch */,
+				3D08E01C2076C3B400E6202F /* SVRadialGradientLayer.h */,
+				3D08E01D2076C3B400E6202F /* SVProgressHUD.m */,
+				3D08E01E2076C3B400E6202F /* SVIndefiniteAnimatedView.m */,
+				3D08E01F2076C3B400E6202F /* SVProgressHUD.bundle */,
+				3D08E0202076C3B400E6202F /* SVProgressAnimatedView.h */,
+			);
+			name = SVProgressHUD;
+			path = "../../Objective-C Playground/CreatingNodeServer/CreatingNodeServer/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		3D08E0212076C4A000E6202F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3D08E0222076C4A000E6202F /* SVRadialGradientLayer.m */,
+				3D08E0232076C4A000E6202F /* SVIndefiniteAnimatedView.h */,
+				3D08E0242076C4A000E6202F /* SVProgressHUD.h */,
+				3D08E0252076C4A000E6202F /* SVProgressAnimatedView.m */,
+				3D08E0262076C4A000E6202F /* SVProgressHUD-Prefix.pch */,
+				3D08E0272076C4A000E6202F /* SVRadialGradientLayer.h */,
+				3D08E0282076C4A000E6202F /* SVProgressHUD.m */,
+				3D08E0292076C4A000E6202F /* SVIndefiniteAnimatedView.m */,
+				3D08E02A2076C4A000E6202F /* SVProgressHUD.bundle */,
+				3D08E02B2076C4A000E6202F /* SVProgressAnimatedView.h */,
+			);
+			name = SVProgressHUD;
+			path = "../../Objective-C Playground/CreatingNodeServer/CreatingNodeServer/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		3D08E02C2076C4C800E6202F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3D08E0462076D07E00E6202F /* SVIndefiniteAnimatedView.h */,
+				3D08E04A2076D07F00E6202F /* SVIndefiniteAnimatedView.m */,
+				3D08E0442076D07D00E6202F /* SVProgressAnimatedView.h */,
+				3D08E0432076D07D00E6202F /* SVProgressAnimatedView.m */,
+				3D08E0452076D07E00E6202F /* SVProgressHUD-Prefix.pch */,
+				3D08E0482076D07E00E6202F /* SVProgressHUD.bundle */,
+				3D08E0492076D07E00E6202F /* SVProgressHUD.h */,
+				3D08E0472076D07E00E6202F /* SVProgressHUD.m */,
+				3D08E04B2076D07F00E6202F /* SVRadialGradientLayer.h */,
+				3D08E0422076D07D00E6202F /* SVRadialGradientLayer.m */,
+				3D08E03B2076CC9E00E6202F /* Splash-Bridging-Header.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		57DE6DBBD255D4B82AC265C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D08E0162076C3B400E6202F /* SVProgressHUD */,
+				3D08E0212076C4A000E6202F /* SVProgressHUD */,
 				C5B6205B69D7DC9D3FA42D54 /* Pods_Splash.framework */,
 			);
 			name = Frameworks;
@@ -170,6 +266,7 @@
 				TargetAttributes = {
 					3D05B5E620737B9600BB888C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -197,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D08E04F2076D07F00E6202F /* SVProgressHUD.bundle in Resources */,
 				3D05B5F520737B9600BB888C /* LaunchScreen.storyboard in Resources */,
 				3D08DFFC2076687500E6202F /* GoogleService-Info.plist in Resources */,
 				3D05B5F220737B9600BB888C /* Assets.xcassets in Resources */,
@@ -271,12 +369,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D08E04C2076D07F00E6202F /* SVRadialGradientLayer.m in Sources */,
+				3D08E0522076D14100E6202F /* CustomUI.swift in Sources */,
 				3D08DFFA20754CDD00E6202F /* SignInView.swift in Sources */,
 				3D05B60020737CA700BB888C /* SplashView.swift in Sources */,
 				3D05B60320737E3400BB888C /* extension splash.swift in Sources */,
 				3D05B5ED20737B9600BB888C /* SplashController.swift in Sources */,
+				3D08E0502076D07F00E6202F /* SVIndefiniteAnimatedView.m in Sources */,
+				3D08E04E2076D07F00E6202F /* SVProgressHUD.m in Sources */,
 				3D05B605207380BF00BB888C /* SignInViewController.swift in Sources */,
 				3D05B5EB20737B9600BB888C /* AppDelegate.swift in Sources */,
+				3D08E04D2076D07F00E6202F /* SVProgressAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,12 +517,16 @@
 			baseConfigurationReference = D8AE4D4DD26DCA1464B2620C /* Pods-Splash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2A5RB5J4C;
 				INFOPLIST_FILE = Splash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phdang.Splash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SVProgressHUD/Splash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,12 +537,15 @@
 			baseConfigurationReference = CDC2D1279D181DA62A9BAB55 /* Pods-Splash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2A5RB5J4C;
 				INFOPLIST_FILE = Splash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phdang.Splash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SVProgressHUD/Splash-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

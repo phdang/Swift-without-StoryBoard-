@@ -31,8 +31,8 @@ class SignInView: UIViewController {
             ])
     }
     
-    internal let registerView: UIView = {
-        let  view = UIView()
+    internal let registerView: CustomeUIView = {
+        let  view = CustomeUIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -47,16 +47,12 @@ class SignInView: UIViewController {
         registerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
         registerView.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 10)
             ])
-        registerView.layer.cornerRadius = 5
-        registerView.layer.shadowColor = UIColor(red: 97.0, green: 97.0, blue: 97.0, alpha: 0.8).cgColor
-        registerView.layer.shadowOpacity = 0.8;
-        registerView.layer.shadowRadius = 5.0;
-        registerView.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        
         registerView.layer.masksToBounds = false
     }
     
-    internal let nameTextField : UITextField = {
-        let textField = UITextField()
+    internal let nameTextField : CustomTextField = {
+        let textField = CustomTextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your full name"
         textField.autocorrectionType = .no
@@ -89,8 +85,8 @@ class SignInView: UIViewController {
     
     }
     
-    internal let emailTextField : UITextField = {
-        let textField = UITextField()
+    internal let emailTextField : CustomTextField = {
+        let textField = CustomTextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your email"
         textField.keyboardType = .emailAddress
@@ -124,8 +120,8 @@ class SignInView: UIViewController {
             ])
     }
     
-    internal let passTextField : UITextField = {
-        let textField = UITextField()
+    internal let passTextField : CustomTextField = {
+        let textField = CustomTextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Enter your password"
         textField.isSecureTextEntry = true

@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-
 class SignInViewController: SignInView {
     
     private func isValidEmail(email:String) -> Bool {
@@ -35,6 +34,8 @@ class SignInViewController: SignInView {
         super.viewDidLoad()
         
         navigationItem.setHidesBackButton(true, animated: true)
+        
+        
         
     }
 
@@ -103,9 +104,13 @@ class SignInViewController: SignInView {
     
     @objc func handleSignInBtnTouched() {
         
+        SVProgressHUD.show()
+        
         if !isValidEmail(email: emailTextField.text ?? "") {
             
             alert(title: "Sign in Failed", message: "Email is not valid", viewController: self)
+            
+            SVProgressHUD.dismiss()
             
             return
             
@@ -114,6 +119,8 @@ class SignInViewController: SignInView {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passTextField.text ?? "") { (user, error) in
             
             if let error = error {
+                
+                SVProgressHUD.dismiss()
                 
                 alert(title: "Sign in Failed", message: error.localizedDescription, viewController: self)
                 
